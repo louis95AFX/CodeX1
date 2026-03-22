@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Building | SiteSeed Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ss-green': '#7abf5a',
+                        'ss-dark': '#2d3748',
+                        'ss-bg': '#f9f7f2', // Matches your uploaded screenshot
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-divider {
+            width: 60px;
+            height: 4px;
+            background: #7abf5a;
+            border-radius: 99px;
+        }
+    </style>
+</head>
+<body class="bg-ss-bg font-sans text-gray-700">
+
+    <nav class="border-b border-gray-200 py-4 px-6 sticky top-0 z-50 shadow-sm" style="background-color: #f9f7f2;">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-12 h-12 mr-2 overflow-hidden flex items-center justify-center">
+                    <img src="site.png" alt="SiteSeed Logo" class="w-full h-full object-contain">
+                </div>
+                <span class="text-2xl font-bold text-gray-800 tracking-tight">Site<span class="text-ss-green">Seed</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-ss-green transition flex items-center gap-2">
+                    <i class="fas fa-home text-sm"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-20 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <span class="px-4 py-1 text-xs font-bold uppercase tracking-widest text-ss-green bg-green-50 border border-green-100 rounded-full mb-6 inline-block">
+                    iOS & Android Development
+                </span>
+                <h1 class="text-5xl font-extrabold text-ss-dark leading-tight mb-6">
+                    Your Business, in Their <span class="text-ss-green">Pocket.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    We develop native-feel mobile applications that provide seamless user experiences. Whether it's a customer loyalty app or a complex management tool, we build for performance.
+                </p>
+                <div class="flex gap-4">
+                    <button onclick="document.getElementById('terms-section').scrollIntoView({behavior: 'smooth'})" class="px-8 py-3 bg-ss-green text-white font-bold rounded-lg shadow-lg hover:bg-opacity-90 transition transform hover:-translate-y-1">
+                        Start Building
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Mobile Development" class="rounded-3xl shadow-2xl border-8 border-white">
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-ss-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-extrabold text-ss-dark mb-4">Native Experience</h2>
+            <div class="section-divider mx-auto mb-12"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-mobile-alt text-3xl text-ss-green mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Cross-Platform</h3>
+                    <p class="text-gray-500 text-sm">One codebase for both iOS and Android, saving you time and deployment costs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-bell text-3xl text-ss-green mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Push Notifications</h3>
+                    <p class="text-gray-500 text-sm">Keep your users engaged with real-time updates and marketing alerts.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-offline text-3xl text-ss-green mb-4" style="transform: rotate(180deg);"></i>
+                    <i class="fas fa-wifi text-3xl text-ss-green mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Offline Ready</h3>
+                    <p class="text-gray-500 text-sm">Functionality that works even without an internet connection for maximum utility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="terms-section" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-ss-bg border-2 border-ss-green rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+
+                <section class="py-20 bg-ss-bg">
+                    <div class="container mx-auto px-6">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl font-extrabold text-ss-dark mb-4">Mobile App Pricing <span class="text-ss-green">(iOS + Android)</span></h2>
+                            <div class="section-divider mx-auto mb-6"></div>
+                            <p class="text-gray-600">Choose a package that fits your business scale. No upfront costs—pay when satisfied.</p>
+                        </div>
+                
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            
+                            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                                    <h3 class="text-xl font-bold text-ss-dark">Starter App</h3>
+                                </div>
+                                <div class="mb-6">
+                                    <span class="text-3xl font-black text-ss-dark">R15,000</span>
+                                    <span class="text-gray-400 text-sm"> – R28k</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6 font-medium">Best for small businesses just starting their mobile journey.</p>
+                                <ul class="space-y-4 mb-8 text-sm">
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> 3–5 Screens</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Basic UI Design</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> WhatsApp Integration</li>
+                                    <li class="flex items-center gap-2 text-gray-400"><i class="fas fa-times"></i> No Login System</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-plus text-ss-green"></i> R3k for dual platforms</li>
+                                </ul>
+                                <button onclick="selectTier('Starter App')" class="w-full py-3 border-2 border-ss-green text-ss-green font-bold rounded-xl hover:bg-ss-green hover:text-white transition">Choose Starter</button>
+                            </div>
+                
+                            <div class="bg-white p-8 rounded-3xl border-4 border-ss-green shadow-xl transform lg:-translate-y-4 relative">
+                                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-ss-green text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                    Most Popular ⭐
+                                </div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                                    <h3 class="text-xl font-bold text-ss-dark">Business App</h3>
+                                </div>
+                                <div class="mb-6">
+                                    <span class="text-3xl font-black text-ss-dark">R28,000</span>
+                                    <span class="text-gray-400 text-sm"> – R75k</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6 font-medium">Your main money-maker package for growth and engagement.</p>
+                                <ul class="space-y-4 mb-8 text-sm">
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> 5–10 Screens</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> User Login / Signup</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Push Notifications</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Payment/API Integration</li>
+                                    <li class="flex items-center gap-2 font-bold text-ss-dark"><i class="fas fa-check text-ss-green"></i> Published on both iOS + Android</li>
+                                </ul>
+                                <button onclick="selectTier('Business App')" class="w-full py-4 bg-ss-green text-white font-black rounded-xl hover:bg-opacity-90 transition shadow-lg">Choose Business</button>
+                            </div>
+                
+                            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                    <h3 class="text-xl font-bold text-ss-dark">Premium / Custom</h3>
+                                </div>
+                                <div class="mb-6">
+                                    <span class="text-3xl font-black text-ss-dark">R75,000</span>
+                                    <span class="text-gray-400 text-sm"> – R280k+</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6 font-medium">For serious businesses and startups with custom requirements.</p>
+                                <ul class="space-y-4 mb-8 text-sm">
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Unlimited Screens</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Advanced Features (GPS, Chat)</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Scalable Backend System</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Advanced Admin Panel</li>
+                                    <li class="flex items-center gap-2"><i class="fas fa-check text-ss-green"></i> Priority 24/7 Support</li>
+                                </ul>
+                                <button onclick="selectTier('Premium App')" class="w-full py-3 bg-ss-dark text-white font-bold rounded-xl hover:bg-gray-800 transition">Choose Premium</button>
+                            </div>
+                        </div>
+                
+                        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                                <h4 class="font-bold text-ss-dark mb-4 flex items-center gap-2">
+                                    <i class="fas fa-bolt text-ss-green"></i> Extra Add-Ons
+                                </h4>
+                                <ul class="text-xs space-y-2 text-gray-500">
+                                    <li class="flex justify-between"><span>Publishing (Stores)</span> <span class="font-bold text-ss-dark">R2k – R5k</span></li>
+                                    <li class="flex justify-between"><span>Premium UI/UX Design</span> <span class="font-bold text-ss-dark">R4k – R15k</span></li>
+                                    <li class="flex justify-between"><span>Payment Integration</span> <span class="font-bold text-ss-dark">R3k – R10k</span></li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl border border-gray-100 flex flex-col justify-center">
+                                <h4 class="font-bold text-ss-dark mb-2 flex items-center gap-2">
+                                    <i class="fas fa-tools text-ss-green"></i> Monthly Maintenance
+                                </h4>
+                                <p class="text-2xl font-black text-ss-green">R1,000 <span class="text-xs text-gray-400 font-normal"> – R5,000/mo</span></p>
+                                <p class="text-[10px] text-gray-400 mt-2 italic font-bold">Payable only once site is built and satisfied.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="flex justify-center">
+                    <button onclick="document.getElementById('mobile-form').classList.remove('hidden'); this.parentElement.parentElement.classList.add('hidden');" 
+                            class="px-10 py-4 bg-ss-green text-white font-extrabold rounded-xl shadow-lg hover:bg-opacity-90 transition transform hover:scale-105">
+                        Agree & Open Mobile Brief <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-form" class="hidden mt-12 bg-white border border-gray-200 rounded-3xl p-8 md:p-12 shadow-2xl">
+                <h3 class="text-2xl font-bold text-ss-dark mb-6">Mobile App Briefing</h3>
+                <form action="https://formsubmit.co/your-email@example.com" method="POST" enctype="multipart/form-data" class="space-y-6">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Business/App Name</label>
+                            <input type="text" name="app_name" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-ss-green focus:ring-2 focus:ring-ss-green outline-none" placeholder="e.g. SiteSeed Mobile">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">WhatsApp Number</label>
+                            <input type="tel" name="whatsapp" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-ss-green focus:ring-2 focus:ring-ss-green outline-none" placeholder="081 234 5678">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Main Platform Goal</label>
+                        <select name="platform" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-ss-green focus:ring-2 focus:ring-ss-green outline-none">
+                            <option>Both iOS & Android (Cross-platform)</option>
+                            <option>Android Only</option>
+                            <option>iOS Only</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">App Functionality</label>
+                        <textarea name="functionality" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-ss-green focus:ring-2 focus:ring-ss-green outline-none" placeholder="What should the app do? (e.g. Booking, User Profiles, Map Integration)"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Brand Assets / UI Wireframe (Optional)</label>
+                        <input type="file" name="attachment" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-ss-green hover:file:bg-green-100">
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-ss-dark text-white font-extrabold rounded-xl hover:bg-gray-800 transition">
+                        Submit App Request <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-gray-100 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2026 SiteSeed Professional Services.</p>
+    </footer>
+    <script>
+        function selectTier(tierName) {
+            document.getElementById('mobile-form').classList.remove('hidden');
+            document.getElementById('mobile-form').scrollIntoView({behavior: 'smooth'});
+            // Optional: Pre-fill the dropdown with the selected tier
+            const select = document.querySelector('select[name="platform"]'); 
+            // Note: You might want to update the select options to match Tier names
+        }
+    </script>
+</body>
+</html>
