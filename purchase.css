@@ -1,0 +1,128 @@
+:root {
+    /* Updated to match site.jpeg colors */
+    --primary: #76b852;    /* Leaf Green */
+    --secondary: #223336;  /* Deep Slate */
+    --accent: #a8d59d;     /* Mint Accent */
+    --bg-cream: #f8f5f0;   /* Logo Background */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Matching the organic, soft background */
+  .gradient-bg {
+    background: linear-gradient(135deg, #f8f5f0 0%, #eff2eb 100%);
+  }
+  
+  /* Updated Course Cards to be cleaner and more organic */
+  .course-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(0);
+    border: 1px solid rgba(34, 51, 54, 0.1);
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px -10px rgba(34, 51, 54, 0.15);
+    border-color: var(--primary);
+  }
+  
+  /* Badge for certifications - using the Green theme */
+  .badge-certified {
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    color: white;
+    font-weight: 600;
+    border-radius: 999px;
+  }
+  
+  /* Refined Search Bar */
+  .search-bar {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e2e8f0;
+    backdrop-filter: blur(8px);
+  }
+  
+  .search-bar:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(118, 184, 82, 0.2);
+    outline: none;
+  }
+  
+  /* Pricing - Consistent Green */
+  .price-tag {
+    background: rgba(118, 184, 82, 0.1);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+  
+  /* Enrollment Button - High Contrast */
+  .enroll-btn {
+    background: var(--primary);
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .enroll-btn:hover {
+    background: #639d43; /* Darker green */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(118, 184, 82, 0.3);
+  }
+  
+  /* Navigation Shadow */
+  .nav-shadow {
+    box-shadow: 0 2px 15px rgba(34, 51, 54, 0.05);
+  }
+  
+  /* Course Image handling */
+  .course-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .course-card:hover .course-image {
+    transform: scale(1.05);
+  }
+  
+  /* Custom Progress Bar (Top of screen) */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: var(--primary);
+    z-index: 1000;
+  }
+  
+  /* Category Chips */
+  .category-chip {
+    background: var(--bg-cream);
+    color: var(--secondary);
+    border: 1px solid rgba(34, 51, 54, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .category-chip:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+  .brand-green-text {
+    color: #76b852 !important; /* Forces the green from site.jpeg */
+}
+.search-bar:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(118, 184, 82, 0.2); /* Soft green glow */
+  outline: none;
+}.bg-cream {
+  background-color: #f9f8f4 !important; /* This matches your new screenshot exactly */
+}
